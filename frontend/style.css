@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+body {
+    background: #191d28;
+    margin: 0;
+    font-family: 'Oswald', 'sans-serif';
+  }
+a {
+  text-decoration: none;
+  color: inherit; 
+}
+.navbar {
+  margin-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  place-content: space-between;
+}  
+.navbar #logo {
+    margin-top: 0px;
+    color: #6fc8c9;
+    font-weight: 700;
+    font-size: 2em;
+  }
+.navbar #logo span {
+  color: azure;
+  font-weight: 400;
+  opacity: 0.8;
+  margin-right: 2vw;
+} 
+
+.navbar .btn .btn-currency {
+  background-color: #2f3241;
+  padding: 1.2em;
+  color: #fdffff;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 2vw;
+}
+
+.navbar .btn-faketelegram {
+  background-color: #3dc5c1;
+  padding: 1.2em;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.container {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+#loader {
+  margin-top: 20vh;
+  margin-left: 38vw;
+  border: 16px solid #fdfdfd;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+table {
+  width: 100%;
+  color: #ffffff;
+  font-size: 1.2em;
+  border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+    font-weight: 700;
+    opacity: 0.8;
+    background-color: #191d28;
+}
+
+tr{
+  background-color: #2f3241;
+  border: 8px solid #191d28;
+}
+td {
+  text-align: center;
+  font-weight: 700;
+}

@@ -8,7 +8,8 @@ export const apiFetchCryptoInfo = async () => {
     
         if(DataExists === 1)
         {
-            return;
+            await pool.query("TRUNCATE TABLE cryptocurrency RESTART IDENTITY");
+            console.log("Old Data Deleted Or Truncated to fetch New Data");
         }
 
     try {
