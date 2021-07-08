@@ -16,6 +16,9 @@ apiFetchCryptoInfo();
 // routes to get the data from Database to Frontend
 app.use('/datafromdb', cryptostats);
 
+app.get('/', (req,res) => {
+    res.send("Welcome to HODLINFO_CLONE API, go to /datafromdb route to fetch data");
+});
 
 const PORT = process.env.PORT || 5000;
 

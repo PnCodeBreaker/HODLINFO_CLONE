@@ -1,4 +1,4 @@
-const api = "http://localhost:5000/datafromdb/";
+const api = "https://hodlinfo-clone-api.herokuapp.com/datafromdb";
 
 async function getapi(url) {
     
