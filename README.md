@@ -1,4 +1,4 @@
-# HODLINFO_ClONE
+# HODLINFO_CLONE
 <b> A Repo of HODLINFO_CLONE for Internship Interview Task using Node.js, Express.js and PostgreSQL for backend and simple HTML,CSS in Frontend. </b> <br><br>
 <b> Top 10 results from api(https://api.wazirx.com/api/v2/tickers) is fetched in Nodejs express server and name, last, buy, Sell, volume, base_unit of all top 10 results in the   database (PostgreSQL) is stored.  <br> <br>
 A route using express to get the above stored data from the database to the frontend is also created. </b>
