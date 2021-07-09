@@ -33,6 +33,7 @@ export const apiFetchCryptoInfo = async () => {
             }
         }
         console.log("Data inserted");
+        return 1;
     } catch (error) {
         return console.log(error);
     }

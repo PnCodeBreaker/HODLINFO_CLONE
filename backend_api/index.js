@@ -13,7 +13,8 @@ app.use(cors());
 // To Fetch The Data from API Wazirx and Store it into Database 
 apiFetchCryptoInfo();
 
-// routes to get the data from Database to Frontend
+// routes to get the data from Database to Frontend 
+// and also an additional route is also included to update the database with new WazirX api Data.
 app.use('/datafromdb', cryptostats);
 
 app.get('/', (req,res) => {
