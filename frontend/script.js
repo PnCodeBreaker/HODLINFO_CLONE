@@ -1,3 +1,4 @@
+// for fetching data from database
 const api = "https://hodlinfo-clone-api.herokuapp.com/datafromdb";
 
 async function getapi(url) {
@@ -41,3 +42,19 @@ function show(data) {
    
     document.getElementById("crypto").innerHTML = tab;
 }
+
+// for updating data into the database in backend which will be updated from the latest wazirx api data.
+
+async function updateData() {
+    const updateApi = "https://hodlinfo-clone-api.herokuapp.com/datafromdb/updatedata";
+    const response = await fetch(updateApi);
+    if(response.status === 201)
+    {
+        console.log("Data Successfully Updated in Database (postgres)");
+        window.location.reload();
+    }
+    else {
+        return console.log("unable to Update Database");
+    }
+}
+
