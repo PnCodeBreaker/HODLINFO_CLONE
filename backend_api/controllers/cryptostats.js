@@ -11,7 +11,7 @@ export const getCryptoStats = async (req,res) => {
     }
 }
 
-// additonal/extra controller to update Data in Postgres Database fetched from WazirX api
+// additional/extra controller to update Data in Postgres Database fetched from WazirX api
 
 export const updateCryptoStats = async (req,res) => {
     try {
