@@ -46,6 +46,8 @@ function show(data) {
 // for updating data into the database in backend which will be updated from the latest wazirx api data.
 
 async function updateData() {
+    document.getElementById("crypto").innerHTML = '';
+    document.getElementById('loader').style.display = 'block';
     const updateApi = "https://hodlinfo-clone-api.herokuapp.com/datafromdb/updatedata";
     const response = await fetch(updateApi);
     if(response.status === 201)
